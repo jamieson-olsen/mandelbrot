@@ -1,2 +1,2 @@
-simple mandlebrot set image generator.
+simple mandelbrot set image generator.
 it is not fast.
