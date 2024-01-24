@@ -16,8 +16,6 @@ for x in range(xpix):
     for y in range(ypix):
         z[x][y] = complex( (xmax-xmin)/xpix*x+xmin, -((ymax-ymin)/ypix*y+ymin) )
 
-print(z[0][0], z[xpix-1][ypix-1])
-
 for x in range(xpix):  
     for y in range(ypix):
         c = z[x][y]
