@@ -33,4 +33,7 @@ Here's an ASCII depiction of the Mandelbrot set. This is similar to the very fir
                                              @@@@@                          
                                             @  @
 
+A fast interactive Mandelbrot explorer is available here:
+
+https://math.hws.edu/eck/js/mandelbrot/MB.html
 
