@@ -7,24 +7,22 @@ ymin = -1.0
 ymax = 1.0
 xpix = 600
 ypix = 400
-maxiter = 40
+maxiter = 255
 
 pict = img.new( mode="RGB", size=(xpix, ypix) )
-z = np.zeros( (xpix,ypix), dtype=complex )
+c = np.zeros( (xpix,ypix), dtype=complex )
 
 for x in range(xpix): 
     for y in range(ypix):
-        z[x][y] = complex( (xmax-xmin)/xpix*x+xmin, -((ymax-ymin)/ypix*y+ymin) )
+        c[x][y] = complex( (xmax-xmin)/xpix*x+xmin, -((ymax-ymin)/ypix*y+ymin) )
 
 for x in range(xpix):  
     for y in range(ypix):
-        c = z[x][y]
+        z = 0
         for i in range(maxiter):
-            zn = z[x][y] ** 2 + c
-            if ( abs(zn) > 2.0 ):
-                pict.putpixel( (x,y), (255,i*6+15,0) )
+            z = z ** 2 + c[x][y]
+            if ( abs(z) > 2.0 ):
+                pict.putpixel( (x,y), (255-i,0,i) )
                 break
-            else:
-                z[x][y] = zn
                        
 pict.show()

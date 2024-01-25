@@ -37,3 +37,4 @@ A fast interactive Mandelbrot explorer is available here:
 
 https://math.hws.edu/eck/js/mandelbrot/MB.html
 
+Also there are tons of "Mandelbrot Zoom" videos on Youtube.
