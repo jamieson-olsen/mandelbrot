@@ -1,9 +1,9 @@
 import PIL.Image as img
 import numpy as np
 
-xmin, xmax = -2.0, 1.0
-ymin, ymax = -1.0, 1.0
-xpix, ypix = 600, 400
+xmin, xmax = -2.1, .83
+ymin, ymax = -1.1, 1.1
+xpix, ypix = 640, 480
 maxiter = 50
 
 p = img.new( mode="L", size=(xpix, ypix) )
